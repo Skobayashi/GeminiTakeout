@@ -1,0 +1,28 @@
+<phpunit bootstrap="./TestsBootstrap.php" colors="true" >
+
+    <!-- Direct -->
+    <testsuite name="TAKEOUT Direct TestSuite">
+        <directory>./application</directory>
+    </testsuite>
+
+    <!-- Library -->
+    <testsuite name="TAKEOUT Liberay TestSuite">
+        <directory>./library</directory>
+    </testsuite>
+
+
+    <filter>
+        <!-- If Zend Framework is inside your project's library, uncomment this filter -->
+        <whitelist>
+            <directory suffix=".php">../application/modules/direct</directory>
+            <directory suffix=".php">../library/Takeout</directory>
+            <exclude>
+                <directory suffix=".php">../library/Takeout/Commands</directory>
+                <file>../library/Takeout/Model/AbstractModel.php</file>
+                <file>../library/Takeout/Model/Column/ColumnInterface.php</file>
+                <file>../library/Takeout/Model/Query/QueryInterface.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+
+</phpunit>

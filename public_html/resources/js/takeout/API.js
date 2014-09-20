@@ -1,0 +1,1 @@
+TAKEOUT.REMOTING_API={url:'/direct.php',type:'remoting',timeout:'300000',actions:{Takeout:[{name:'getDatabaseClient',len:1},{name:'getIndexGroup',len:1},{name:'getColumns',len:1},{name:'search',len:1},{name:'generateCsv',len:1}]}};

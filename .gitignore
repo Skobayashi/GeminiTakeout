@@ -1,0 +1,10 @@
+INSTALL.txt
+LICENSE.txt
+README.txt
+demos/
+extras/documentation
+
+.DS_Store
+application/configs/database.ini
+
+

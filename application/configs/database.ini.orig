@@ -1,0 +1,12 @@
+[database]
+db.db       = "database"
+db.host     = "localhost"
+db.username = "root"
+db.password = "root"
+
+
+[server]
+db.db       = "database"
+db.host     = "serverhost"
+db.username = "root"
+db.password = "root"
